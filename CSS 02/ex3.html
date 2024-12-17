@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX #03</title>
+
+    <style>
+
+
+        .color {
+          background-color: red;
+          height: 200px;
+          width: 240px;
+        }
+  
+        .border {
+          border: 3px dashed black;
+          display: flex;
+          justify-content: space-between;
+          height: 200px;
+          width: 1000px;
+        }
+
+        .border02{
+            border: 3px dashed black;
+          display: flex;
+          justify-content: space-between;
+          height: 200px;
+          width: 750px;
+        }
+
+        .green1 {
+          background-color: rgb(20, 143, 38);
+          height: 200px;
+          width: 240px;
+          position: static;
+          left: 2px;
+        }
+
+        .green2 {
+          background-color: rgb(20, 143, 38);
+          height: 200px;
+          width: 240px;
+          position: relative;
+          left: 50px;
+          top: 40px;
+        }
+
+        .green3 {
+          background-color: rgb(20, 143, 38);
+          height: 200px;
+          width: 240px;
+          position: absolute;
+          left: 27px;
+          top: 25px;
+        }
+
+        p{
+         font-size: 34px;
+         margin-top: 0px;
+        }
+
+
+      </style>
+
+
+    </head>
+
+
+
+
+    <body>
+
+
+
+      <div>
+        <h1>position: static</h1>
+        <div class="border">
+          <div class="color"> <p>One</p> </div>
+          <div class="green1"> <p>Tow</p> </div>
+          <div class="color"> <p>Three</p></div>
+          <div class="color"> <p>Four</p></div>
+        </div>
+      </div>
+
+
+
+      <div>
+        <h1>position: relative</h1>
+        <div class="border">
+          <div class="color"> <p>One</p></div>
+          <div class="green2"> <p>Tow</p></div>
+          <div class="color"> <p>Three</p> </div>
+          <div class="color"> <p>Four</p> </div>
+        </div>
+      </div>
+
+
+
+      <div>
+        <h1>position: absolute</h1>
+        <div style="position: relative" class="border02">
+          <div class="color"> <p>One</p> </div>
+          <div class="green3"> <p>Tow</p> </div>
+          <div class="color"> <p>Three</p> </div>
+          <div class="color"> <p>Four</p> </div>
+        </div>
+      </div>
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+</html>
