@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'roboto_mono';
+            src: url(Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+        }
+
+
+        .container1 {
+            position: absolute;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-family: "Bebas Neue", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .bkgimg {
+            z-index: -1;
+            width: 100%;
+            height: 400px;
+            position: relative;
+            opacity: 80%;
+        }
+
+        .head1 {
+            margin-top: 100px;
+        }
+
+        button {
+            box-shadow: 3px 7px 9px 5px rgb(0, 7, 10);
+        }
+
+        .p1 {
+            padding: 20px 300px;
+            text-shadow: 0px 5px 3px rgb(0 0 0 / 59%);
+        }
+
+        .p2 {
+            padding: 1px 120px;
+        }
+
+        .div2 {
+            background-image: linear-gradient(to right, green, yellow, white, beige, brown);
+            text-align: center;
+            font-family: 'roboto_mono';
+            padding: 10px 110px;
+            margin-top: -4px;
+        }
+
+        .container2 {
+            background-color: rgba(0, 0, 0, 0.73);
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .card {
+            background-color: aliceblue;
+            margin: 10px;
+        }
+
+
+
+        #hvr1 :hover {
+
+            transform: scale(.5, .75);
+        }
+
+        #hvr2 :hover {
+            transform: rotate(15deg);
+
+        }
+
+        #hvr3 :hover {
+
+            transform: translate(60px);
+        }
+
+        .container3 {
+            text-align: center;
+            padding: 1px 50px;
+        }
+
+
+        .ftr {
+            display: grid;
+            grid-template-rows: 200px 100px;
+            grid-template-columns: 1fr 1fr;
+            height: auto;
+        }
+
+
+        .ftr1 {
+            grid-row: 1;
+            grid-column: 1;
+            background-color: rgb(35, 151, 214);
+            text-align: center;
+            width: 752px;
+            height: 200px;
+            transition: width 2s;
+
+        }
+
+        .ftr1:hover {
+            width: 1100px;
+            transition-timing-function: linear
+        }
+
+
+
+        .ftr2 {
+            grid-row: 1;
+            grid-column: 2;
+            background-color: rgb(66, 66, 66);
+            text-align: center;
+            height: 250 px;
+        }
+
+
+        .ftr3 {
+            grid-row: 2 / span 2;
+            grid-column: 1 / -1;
+            background-color: rgb(7, 7, 7);
+            color: white;
+            text-align: center;
+            transition: width 2s, height 2s, transform 2s;
+
+        }
+
+        .ftr3:hover {
+            width: 1505px;
+            height: 100px;
+            transform: rotate(180deg);
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+
+
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <div class="container1">
+            <h2 class="head1">Welcom to Responsive Web</h2>
+            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing eligendi a, ad nesciunt
+                esse, id dolorum
+                fugit fuga architecto veritatis nobis obcaecati natus repudiandae suscipit inventore
+                natus facilis.</p>
+            <button>Read More</button>
+        </div>
+        <img class="bkgimg" src="./aaaaaaa.jpg" alt="">
+
+    </header>
+
+
+    <div class="div2">
+        <h3>Responsive Web Development</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam obcaecati accusantium
+            quasi? Fuga praesentium quaerat accusantium minima deleniti Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Earum quia nisi nemo aliquam delectus adipisci autem,
+            vero corrupti eos neque minima? Eos nulla pariatur, tempore rerum sequi dicta soluta
+            necessitatibus explicabo aliquid natus dolores iusto, eius commodi earum sit debitis!
+            soluta quod repellendus, sed illo iusto exercitationem? Aliquid, cumque! Facere sint
+            laborum alias minima optio explicabo atque, eligendi dicta repudiandae iste distinctio!
+        </p>
+
+    </div>
+
+
+    <div class="container2">
+
+        <div class="card" id="hvr1">
+            <img src="laptop1.jpeg" width="100%">
+            <h4>Why Responsive?</h4>
+            <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                dolorum Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+        </div>
+
+        <div class="card" id="hvr2">
+            <img src="laptop2.jpeg" width="100%">
+            <h4>Sam Experience Everywhere </h4>
+            <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                dolorum Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+        </div>
+
+        <div class="card" id="hvr3">
+            <img src="laptop3.jpeg" width="100%">
+            <h4> Improve Your Accessibility</h4>
+            <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                dolorum Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="container3">
+
+        <h3>Develop Your Website </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis
+            illum sunt at ut possimus quaerat voluptatibus rerum. Molestias harum repellat
+            , ipsam tenetur autem atque vero incidunt laudantium obcaecati Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Asperiores, quidem.</p>
+
+    </div>
+
+
+
+
+    <div class="ftr">
+
+
+        <div class="ftr1">
+            <h3>Contact Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                dolorum praesentium dolore quam nam beatae harum libero voluptatibus,
+                voluptatem incidunt voluptate veritatis odio voluptatum fugiat.
+                <br><br><br> info@websahrtyhjve.com
+            </p>
+        </div>
+
+
+        <div class="ftr2">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum,
+                saepe repellat. Dolorum harum expedita iure, sed ullam velit
+                minus pariatur voluptas officiis nesciunt amet et.
+                <br><br><br> www.webresosove.com
+            </p>
+        </div>
+
+        <div class="ftr3">
+            <p>Lorem ipsum dolor sit.
+                <br> consectetur adipisicing <a href="">elit Iusto nihil.</a>
+
+            </p>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
